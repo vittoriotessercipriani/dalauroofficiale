@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pagina non trovata — Osteria Da Lauro</title>
+<meta name="description" content="La pagina che cerchi non esiste. Torna sul sito di Osteria Da Lauro: carne alla brace a Vittorio Veneto dal 1750.">
+<meta name="robots" content="noindex">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' fill='%23722F37'/><text x='32' y='44' font-family='Georgia' font-size='34' fill='%23C5A55A' text-anchor='middle'>L</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,800;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bordeaux:#722F37;--cream:#F5F0E8;--gold:#C5A55A;--gold-light:#DDC387;--ink:#1A1A1A;
+  --serif:'Playfair Display',Georgia,serif;--sans:'Lato',Helvetica,Arial,sans-serif;
+  --ease:cubic-bezier(.16,1,.3,1);
+}
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+body{
+  font-family:var(--sans);color:var(--cream);min-height:100svh;display:flex;align-items:center;justify-content:center;
+  text-align:center;overflow-x:hidden;position:relative;
+  background:
+    radial-gradient(80% 60% at 50% 22%,rgba(158,70,79,.62),rgba(158,70,79,0) 62%),
+    radial-gradient(55% 45% at 72% 85%,rgba(197,165,90,.14),transparent 65%),
+    linear-gradient(180deg,#2a1418 0%,#1d0e11 50%,#130a0c 100%);
+}
+.grain{position:fixed;inset:0;background-image:url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="180" height="180"><filter id="n"><feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="2" stitchTiles="stitch"/><feColorMatrix type="saturate" values="0"/></filter><rect width="100%" height="100%" filter="url(%23n)"/></svg>');opacity:.05;pointer-events:none}
+.frame{position:fixed;inset:clamp(14px,3vw,30px);border:1px solid rgba(197,165,90,.34);pointer-events:none}
+.frame::before{content:"";position:absolute;inset:5px;border:1px solid rgba(197,165,90,.16)}
+.box{position:relative;z-index:2;width:min(640px,92%);padding:3rem 1rem;display:flex;flex-direction:column;align-items:center}
+.anim{opacity:0;animation:rise .9s var(--ease) forwards;animation-delay:var(--ad,0s)}
+@keyframes rise{from{opacity:0;transform:translateY(26px)}to{opacity:1;transform:none}}
+.mono{width:52px;height:52px;border:1px solid var(--gold);display:grid;place-items:center;font-family:var(--serif);font-weight:700;font-size:1.55rem;color:var(--gold);margin-bottom:1.8rem;transition:.35s}
+.mono:hover{background:var(--gold);color:#1c1206}
+.eyebrow{font-size:.64rem;font-weight:700;letter-spacing:.44em;text-transform:uppercase;color:var(--gold-light);margin-bottom:.6rem}
+.code{font-family:var(--serif);font-weight:800;font-size:clamp(5.5rem,22vw,9.5rem);line-height:1;color:transparent;-webkit-text-stroke:1.5px rgba(197,165,90,.75);letter-spacing:.02em;user-select:none}
+.code b{color:var(--gold);-webkit-text-stroke:0;font-weight:800}
+.orn{width:132px;color:var(--gold);margin:.4rem 0 .2rem}
+h1{font-family:var(--serif);font-weight:600;font-size:clamp(1.7rem,5vw,2.5rem);margin-top:.9rem}
+.msg{font-family:var(--serif);font-style:italic;font-size:clamp(1rem,2.6vw,1.18rem);color:rgba(245,240,232,.82);max-width:44ch;margin-top:1rem;line-height:1.65}
+.btns{display:flex;flex-wrap:wrap;justify-content:center;gap:1rem;margin-top:2.4rem}
+.btn{position:relative;display:inline-flex;align-items:center;justify-content:center;gap:.65rem;padding:1.05rem 2.1rem;font-weight:700;font-size:.76rem;letter-spacing:.2em;text-transform:uppercase;text-decoration:none;border:none;border-radius:2px;cursor:pointer;overflow:hidden;transition:transform .35s,box-shadow .35s,background .35s,border-color .35s}
+.btn svg{width:16px;height:16px}
+.btn-gold{background:linear-gradient(135deg,var(--gold),#B08F3E);color:#1c1206}
+.btn-gold:hover{transform:translateY(-3px);box-shadow:0 18px 34px -14px rgba(197,165,90,.6)}
+.btn-gold::after{content:"";position:absolute;top:0;left:-85%;width:45%;height:100%;background:linear-gradient(100deg,transparent,rgba(255,255,255,.4),transparent);transform:skewX(-20deg);transition:left .65s var(--ease)}
+.btn-gold:hover::after{left:135%}
+.btn-outline{border:1px solid rgba(245,240,232,.45);color:var(--cream);background:transparent}
+.btn-outline:hover{background:rgba(245,240,232,.1);border-color:var(--cream);transform:translateY(-3px)}
+.foot{margin-top:3rem;padding-top:1.5rem;border-top:1px solid rgba(197,165,90,.2);font-size:.78rem;letter-spacing:.08em;color:rgba(245,240,232,.5)}
+.foot a{color:var(--gold-light);text-decoration:none;border-bottom:1px solid rgba(197,165,90,.4)}
+.foot a:hover{color:var(--gold)}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+
+<div class="grain"></div>
+<div class="frame"></div>
+
+<main class="box">
+  <a class="mono anim" style="--ad:.1s" href="index.html" aria-label="Osteria Da Lauro — Torna alla home">L</a>
+  <p class="eyebrow anim" style="--ad:.22s">Errore</p>
+  <div class="code anim" style="--ad:.3s" aria-hidden="true">4<b>0</b>4</div>
+  <svg class="orn anim" style="--ad:.38s" viewBox="0 0 220 20" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1"><path d="M0 10h86M134 10h86"/><rect x="104" y="4" width="12" height="12" transform="rotate(45 110 10)"/><circle cx="95" cy="10" r="1.7" fill="currentColor" stroke="none"/><circle cx="125" cy="10" r="1.7" fill="currentColor" stroke="none"/></g></svg>
+  <h1 class="anim" style="--ad:.44s">Pagina non trovata</h1>
+  <p class="msg anim" style="--ad:.54s">Il tavolo che cercavi non esiste… ma la nostra brace è sempre accesa. Torna a trovarci.</p>
+  <div class="btns anim" style="--ad:.66s">
+    <a class="btn btn-gold" href="index.html">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+      Torna alla Home
+    </a>
+    <a class="btn btn-outline" href="index.html#prenota">Prenota un Tavolo</a>
+  </div>
+  <p class="foot anim" style="--ad:.78s">
+    Osteria Da Lauro — Via Calcada, 57, Vittorio Veneto · <a href="tel:+390438552769">+39 0438 552769</a>
+  </p>
+</main>
+
+</body>
+</html>
